@@ -1,0 +1,44 @@
+th表示表头单元格
+td表示数据单元格
+
+
+<style>
+	   table,th,td{
+	        border:1px solid black;
+			}
+	</style>
+表示表格线框是1px，实线和黑色，并且三个设置一样
+
+表格的写法
+  <table>
+	    <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>随便说句话吧</th>
+        </tr>
+        <tr>
+		    <td>小灰灰
+			</td>
+			<td>18
+			</td>
+			<td>注定是要改变世界的人
+			</td>
+        </tr>		
+	  </table>
+
+
+border可以设计边框，但是是双线
+border-collapse：collapse将重叠的两条线成为一条线
+css的padding可以调整表格的内边距
+表格单元格的背景颜色
+背景颜色的css属性background
+thead表头
+tbody表身
+tfoot表脚
+跨列colspan=“横跨列数”
+夸行rowspan=“横跨行数”
+
+批量设置行，列
+<colgroup>
+  <col style="颜色或者样式">
+  <col span="跨多少行，列的数字" style=“属性”>

@@ -1,0 +1,68 @@
+<style> 标签用于为 HTML 文档定义样式信息。
+属性	值	描述
+media	screen、tty、tv、projection、handheld、print、braille、aural、all	指定样式适用的媒体。
+scoped	scoped	指定样式的作用范围（如果使用该属性，则样式仅仅应用到 style 元素的父元素及其子元素）。
+type	text/css	指定样式的类型。
+
+media 属性可用来表明文档在什么情况下应该使用该元素中定义的样式。
+值	描述
+all	将样式用于所有设备（默认）。
+aural	将样式用于语音合成器。
+braille	将样式用于盲文设备。
+handheld	将样式用于手持设备（小屏幕、有限的带宽）。
+projection	将样式用于投影机。
+print	将样式用于打印预览或打印页面。
+screen	将样式用于计算机屏幕。
+tty	将样式用于电传打字机之类的等宽设备。
+tv	将样式用于电视机（低分辨率、有限的屏幕翻滚能力）。
+注意：设备的归类是由浏览器负责的，有些设备（比如 screen 和 print）在各种浏览器上的解释比较一致；但有一些设备（比如 handheld）的解释可能各家并不完全一致。因此，在实际开发中需要先核实一下为佳。
+
+
+值	描述
+all	将样式用于所有设备（默认）。
+aural	将样式用于语音合成器。
+braille	将样式用于盲文设备。
+handheld	将样式用于手持设备（小屏幕、有限的带宽）。
+projection	将样式用于投影机。
+print	将样式用于打印预览或打印页面。
+screen	将样式用于计算机屏幕。
+tty	将样式用于电传打字机之类的等宽设备。
+tv	将样式用于电视机（低分辨率、有限的屏幕翻滚能力）。
+注意：设备的归类是由浏览器负责的，有些设备（比如 screen 和 print）在各种浏览器上的解释比较一致；但有一些设备（比如 handheld）的解释可能各家并不完全一致。因此，在实际开发中需要先核实一下为佳。
+
+运算符
+值	描述
+and	逻辑与操作符。
+not	逻辑非操作符。
+,	逻辑或操作符。
+除了可以为指定设备定制样式，media 还支持通过一些特性来设计更具体的条件，运算符就是用于组合设备和特性条件的。
+
+特性
+值	描述
+width	规定目标显示区域的宽度。可使用 "min-" 和 "max-" 前缀。
+例子：media="screen and (min-width:500px)"
+height	规定目标显示区域的高度。可使用 "min-" 和 "max-" 前缀。
+例子：media="screen and (max-height:700px)"
+device-width	规定目标显示器/纸张的宽度。可使用 "min-" 和 "max-" 前缀。
+例子：media="screen and (device-width:500px)"
+device-height	规定目标显示器/纸张的高度。可使用 "min-" 和 "max-" 前缀。
+例子：media="screen and (device-height:500px)"
+orientation	规定目标显示器/纸张的方向。可能的值："portrait" 或 "landscape"
+例子：media="all and (orientation: landscape)"
+aspect-ratio	规定目标显示区域的宽度/高度比。可使用 "min-" 和 "max-" 前缀。
+例子：media="screen and (aspect-ratio:16/9)"
+device-aspect-ratio	规定目标显示器/纸张的 device-width/device-height 比率。可使用 "min-" 和 "max-" 前缀。
+例子：media="screen and (aspect-ratio:16/9)"
+color	规定目标显示器的 bits/color。可使用 "min-" 和 "max-" 前缀。
+例子：media="screen and (color:3)"
+color-index	规定目标显示器可以处理的颜色数。可使用 "min-" 和 "max-" 前缀。
+例子：media="screen and (min-color-index:256)"
+monochrome	规定单色帧缓冲中的 bits/pixel。可使用 "min-" 和 "max-" 前缀。
+例子：media="screen and (monochrome:2)"
+resolution	规定目标显示器/纸张的像素密度 (dpi 或 dpcm)。可使用 "min-" 和 "max-" 前缀。
+例子：media="print and (resolution:300dpi)"
+scan	规定 TV 显示器的扫描方式。可能的值："progressive" 和 "interlace"。
+例子：media="tv and (scan:interlace)"
+grid	规定输出设备是否是网格或位图。可能的值："1" 为网格，否则为 "0"。
+例子：media="handheld and (grid:1)"
+注意："min-" 前缀表示 “不低于” 指定的像素值；"max-" 前缀表示 “不大于” 指定的像素值。

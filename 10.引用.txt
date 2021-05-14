@@ -1,0 +1,11 @@
+q元素显示简短的行内引用，形式上加双引号
+blockquote元素用于长引用，形式上是缩进的方式
+
+语义与呈现分离
+
+cite元素：电影名字，节目等的标题名字，默认样式是斜体
+abbr元素配合title就可以定义简称起到注释作用
+dfn元素 用于表示特定术语
+address元素 用于表示作者的联系信息
+ruby、rt、rp元素注音的
+bdo元素指定文本显示，与dir配合    ltr=left to right     rtl=right to left

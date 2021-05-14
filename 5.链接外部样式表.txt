@@ -1,0 +1,17 @@
+<link> 标签用于指定外部资源。
+link 元素最常见的用途是链接样式表。
+属性	值	描述
+href	URL	指定被链接资源的 URL。
+hreflang	language_code	指定被链接资源使用的语言。
+sizes	HeightxWidth	指定图标的大小（比如 sizes="16x16"）。
+media	media_query	指定被链接的资源将被显示到什么设备上。
+rel	alternate、author、help、icon、licence、next、pingback、prefetch、prev、search、sidebar、stylesheet、tag	指定当前文档与被链接资源之间的关系。
+type	MIME_type	规定被链接文档的 MIME 类型。
+
+链接网站图标
+16*16或32*32的图标
+<link rel="icon" type="image/x-icon" href="位置/favicon.ico">
+
+指定相对url的的解析基准
+在<head>里面写<base href="网址" target="_blank">就是在新空白标签页打开这个网站
+在<body>里面写<a href="内容"</a>

@@ -1,0 +1,28 @@
+requirement
+用<img>标签显示
+用<a>标签增加超链接跳转
+注意：
+在html中<img>标签没有结束标签，必须被正确的关闭
+<img> 标签有两个必需的属性：src 属性 和 alt 属性。
+属性	值	描述
+alt	text	指定图像的替代文本。
+src	URL	指定显示图像的 URL。
+<a> 标签最重要的属性是 href 属性，它指定了链接目标的 URL。
+在浏览器中，通常超链接的默认外观是：
+未被访问链接带下划线蓝色
+已被访问链接带下划线红色
+活动链接带下划线红色
+
+属性	值	描述
+download	filename	指定被下载的超链接目标。
+href	URL	指定链接指向页面的 URL。
+hreflang	language_code	指定被链接文档的语言。
+media	media_query	指定被链接文档是为何种媒介/设备优化的。
+rel	text	                规定当前文档与被链接文档之间的关系。
+target	_blank、_parent、_self、_top、framename	指定在何处打开超链接。
+                                                                                           _blank：在新窗口中打开
+                                                                                           _parent：在当前的父窗口中打开，如果不存在父窗口，此选项的行为方式与 _self 等同
+                                                                                           _self：当前窗口打开（默认）
+                                                                                           _top：在整个窗口中打开
+framename：在指定的框架中打开
+type	MIME type	指定被链接文档的的 MIME 类型。

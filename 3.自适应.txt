@@ -1,0 +1,29 @@
+meta元素的各种用法
+<meta> 标签的内容不会显示在网页中，但经常被机器（比如网页爬虫）解析。
+
+元信息可以被浏览器（指导它如何加载和显示页面）所使用，也可以有利于搜索引擎收录页面（指定关键词）。
+
+HTML5 通过 <meta> 标签引入一个新的方法，让网页尺寸实现自适应。
+<meta> 标签永远位于 <head> 标签内部。
+content 属性必须和 name 或 http-equiv 属性共存亡。
+属性	值	描述
+charset	character_set	指定 HTML 文档的编码。
+content	text	指定与 http-equiv 或 name 属性相关的值。
+http-equiv	content-type、default-style、refresh	content-type：另一种声明 HTML 文档作用字符编码的方法（<meta http-equiv="content-type" content="text/html charset=UTF-8">）。
+default-style：指定页面优先使用的样式表。
+refresh：以秒为单位指定一个时间间隔，在此时间过去之后将从服务器重新载入当前页面。也可以另行指定一个 URL 让浏览器载入。
+name	application-name、author、description、generator、keywords、viewport	application-name：当前页所属 Web 应用系统的名称。
+author：当前页的作者名。
+description：当前页的内容描述。
+generator：用来生成 HTML 的软件名称。
+keywords：当前页的关键词。
+viewport：网页尺寸自适应。
+
+
+<meta charset=utf-8">保证编码正确防止乱码
+<meta name="viewport" content="width=device-width,initial-scale=1.0">实现网页自适应
+<meta name="keywords" content="xxxx">表示关键词
+<meta name="description" content="xxxx">百度搜索引擎的关键词
+<mata name="author" content="XXX">添加作者信息
+<meta http-equiv="refresh" content="数字，表示多少秒跳转";"需要跳转过去的链接"
+seo搜索引擎优化——给网页添加关键词和重要信息
